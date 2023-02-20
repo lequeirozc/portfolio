@@ -45,8 +45,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f2744c;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .active-menu {
@@ -57,7 +57,9 @@ nav ul li a:hover {
 }
 
 .active-menu:hover {
-  color: #f7f6f5;
+  color: #f2744c;
+  background-color: #f7f6f5;
+  text-decoration: none;
 }
 
 nav select {
@@ -284,7 +286,8 @@ p.footer-text {
     border-radius: 3px;
   }
 
-  .nav-menu {
+  .menu,
+  .languages {
     display: none;
   }
 
@@ -315,13 +318,33 @@ p.footer-text {
 
 .hamburger-menu-open {
   display: flex;
+  color: #f7f6f5;
   background-color: #f2744c;
   flex-direction: column;
   position: absolute;
   left: 0;
   top: 0;
+  width: 100vw;
+  margin: 0 -15%;
+  text-align: center;
+  padding: 15px 0;
+  overflow: hidden;
 }
 
-.hamburger-open {
-  background-color: #f2744c;
+.hamburger-icon-open {
+  z-index: 1;
+}
+
+.active-hamburger-menu {
+  color: #f2744c;
+  background-color: #f7f6f5;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.active-hamburger-menu:hover {
+  color: #f7f6f5;
+  background-color: transparent;
+  border: 1px solid #f7f6f5;
+  text-decoration: none;
 }
