@@ -1,0 +1,142 @@
+<!--Write html:5 to start an html doc easier-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <link rel="icon" href="image/icon-leticia.svg" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link href="index.css" type="text/css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <img
+          src="image/icon-leticia.svg"
+          alt="Logo"
+          class="logo"
+          height="24px"
+        />
+
+        <div class="nav-menu">
+          <ul class="menu">
+            <li><a href="#" class="active-menu">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="contact">Get in touch</a></li>
+          </ul>
+
+          <select class="languages">
+            <option value="en" selected>English</option>
+            <option value="pt">Português</option>
+          </select>
+        </div>
+
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <h1>Hi! I'm <span class="myname">Leticia</span></h1>
+        <h4>A creative frontend developer and UX/UI designer.</h4>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/lequeirozc/" class="icon">
+            <img
+              id="icon1"
+              src="image/linkedin-icon-hover.svg"
+              height="24px"
+              alt="Linkedin Icon"
+            />
+          </a>
+          <a href="https://github.com/lequeirozc" class="icon">
+            <img
+              id="icon2"
+              src="Image/github-icon-hover.svg"
+              height="24px"
+              alt="GitHub Icon"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="About">
+      <h2>About</h2>
+      <p>
+        I'm a multi-disciplinary designer and front-end developer specializing
+        in user experience and user interface design. With a background in
+        graphic design and architecture, I bring a unique perspective to my work
+        in technology. My endless curiosity and passion for innovation drive me
+        to help businesses connect with their clients through visually appealing
+        and user-friendly designs.<br />
+        <br />
+        My goal is to make a positive impact globally by being part of a diverse
+        team that leverages technology for a better future. Currently studying
+        coding, I'm excited to continue expanding my skills and making a
+        difference through my work.
+      </p>
+
+      <div class="sub-section">
+        <h3>My skills</h3>
+        <div class="row-skills">
+          <img src="Image/skills/HTML.png" class="skill-icon html-icon" />
+          <img src="Image/skills/CSS.png" class="skill-icon css-icon" />
+          <img src="Image/skills/JS.png" class="skill-icon js-icon" />
+          <img src="Image/skills/react.png" class="skill-icon react-icon" />
+        </div>
+        <div class="row-skills">
+          <img src="Image/skills/figma.png" class="skill-icon figma-icon" />
+          <img src="Image/skills/jQuery.png" class="skill-icon jquery-icon" />
+          <img src="Image/skills/adobe-cs.png" class="skill-icon adobe-icon" />
+          <img src="Image/skills/git.png" class="skill-icon git-icon" />
+        </div>
+      </div>
+      <button class="main-button">
+        Get to know more about me and my experiences
+      </button>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="row-projects">
+        <div class="project" id="project1"></div>
+        <div class="project" id="project2"></div>
+        <div class="project" id="project3"></div>
+      </div>
+      <button class="main-button">View more</button>
+    </section>
+
+    <section class="phrase">
+      <p class="phrase">
+        Let&apos;s design something
+        <span class="italic">incredible</span> together.
+      </p>
+    </section>
+
+    <footer>
+      <p class="footer-text">
+        &copy; 2023 - All rights reserved<br />
+        Leticia Queiroz Carvalho
+      </p>
+    </footer>
+
+    <!-- Scripts-->
+    <script src="main.js"></script>
+  </body>
+</html>

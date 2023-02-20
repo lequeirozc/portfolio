@@ -1,0 +1,15 @@
+*{
+    background-color: #1B1B1B;
+    color: #F7F6F5;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 3% 10% auto;
+}
+
+a.icon:link, a.icon:visited, a.icon:hover, a.icon:active{
+    text-decoration: none; 
+    color: transparent;
+    
+}
