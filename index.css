@@ -84,14 +84,6 @@ nav select option {
   padding: 10px 10px;
 }
 
-.hidden-languages {
-  display: none;
-}
-
-.show-languages {
-  display: flex;
-}
-
 h1 {
   font-size: 62px;
   font-weight: 400;
@@ -354,10 +346,11 @@ p.footer-text {
   padding: 15px 0;
   overflow: hidden;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 .hamburger-icon-open {
-  z-index: 1;
+  z-index: 2;
 }
 
 .active-hamburger-menu {
@@ -372,4 +365,12 @@ p.footer-text {
   background-color: transparent;
   border: 1px solid #f7f6f5;
   text-decoration: none;
+}
+
+.hidden-languages {
+  display: none;
+}
+
+.show-languages {
+  display: flex;
 }

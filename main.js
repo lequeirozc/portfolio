@@ -2,18 +2,19 @@
 
 const hamburgerMenu = document.querySelector(`.hamburger-menu`);
 const navMenu = document.querySelector(`.menu`);
-const navLanguages = document.querySelector(`.hidden-languages`);
+const navLanguages = document.querySelectorAll(`.hamburger-languages`);
 const activeMenuOption = document.querySelector(`#active-menu`);
 
+console.log(navLanguages);
 //Function that will run when you click to open the hamburger menu
 function toggleMenu() {
   console.log(`Toggle menu`);
 
   // Show and hidde menu options when hamburger is clicked
   navMenu.classList.toggle(`hamburger-menu-open`);
-  //navLanguages.classList.toggle(`hamburger-menu-open`);
   hamburgerMenu.classList.toggle(`hamburger-icon-open`);
-  navLanguages.classList.toggle(`.show-languages`);
+  navLanguages[0].classList.toggle(`hidden-languages`);
+  navLanguages[1].classList.toggle(`hidden-languages`);
 
   //active menu option style
   //activeMenuOption.classList.toggle(`active-menu`);
@@ -28,10 +29,9 @@ console.log(hamburgerMenu);
 function checkScreenSize() {
   if (window.innerWidth > 820) {
     navMenu.classList.remove(`hamburger-menu-open`);
-    navLanguages.classList.remove(`hamburger-menu-open`);
     hamburgerMenu.classList.remove(`hamburger-icon-open`);
     activeMenuOption.classList.remove(`active-hamburger-menu`);
-    navLanguages.classList.remove(`.show-languages`);
+    navLanguages.classList.add(`hidden-languages`);
   }
 }
 
