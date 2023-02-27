@@ -15,7 +15,7 @@ function toggleMenu() {
   hamburgerMenu.classList.toggle(`hamburger-icon-open`);
 
   //active menu option style
-  activeMenuOption.classList.toggle(`active-menu`);
+  //activeMenuOption.classList.toggle(`active-menu`);
   activeMenuOption.classList.toggle(`active-hamburger-menu`);
 }
 
@@ -33,3 +33,24 @@ function checkScreenSize() {
 }
 
 window.addEventListener("resize", checkScreenSize);
+
+const portuguese = {
+  header: `<h1>Oi! Eu sou a<span class="myname">Leticia</span></h1>
+  <h4>Uma criativa frontend developer e UX/UI designer.</h4>`,
+  about: `<h2>Sobre</h2>
+  <p>
+  Eu sou uma designer multi-disciplinar e desenvolvedora 
+  front-end especializada em design de experiência do usuário
+  e interface do usuário. Com experiência em design gráfico
+  e arquitetura, trago uma perspectiva única para o meu
+  trabalho em tecnologia. Minha curiosidade infinita
+  e paixão por inovação me impulsionam a ajudar empresas
+  a se conectarem com seus clientes por meio de designs
+  visualmente atraentes e amigáveis ao usuário.<br /><br />
+  Meu objetivo é causar um impacto positivo globalmente 
+  fazendo parte de uma equipe diversificada que alavanca 
+  a tecnologia para um futuro melhor. Atualmente estudando
+  programação, estou animada para continuar expandindo minhas
+  habilidades e fazendo a diferença por meio do meu trabalho.
+  </p>`,
+};
