@@ -46,9 +46,16 @@
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html" class="contact">Get in touch</a></li>
+
+          <li class="hidden-languages">
+            <select name="language" id="languageSelect">
+              <option value="en" selected>English</option>
+              <option value="pt">Português</option>
+            </select>
+          </li>
         </ul>
 
-        <select name="language" class="languages">
+        <select name="language" class="languages" id="languageSelect">
           <option value="en" selected>English</option>
           <option value="pt">Português</option>
         </select>
@@ -61,8 +68,10 @@
       </nav>
 
       <div class="header-content">
-        <h1>Hi! I'm <span class="myname">Leticia</span></h1>
-        <h4>A creative frontend developer and UX/UI designer.</h4>
+        <div id="header-text">
+          <h1>Hi! I'm <span class="myname">Leticia</span></h1>
+          <h4>A creative frontend developer and UX/UI designer.</h4>
+        </div>
         <div class="icons">
           <a href="https://www.linkedin.com/in/lequeirozc/" class="icon">
             <img
