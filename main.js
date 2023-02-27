@@ -31,7 +31,8 @@ function checkScreenSize() {
     navMenu.classList.remove(`hamburger-menu-open`);
     hamburgerMenu.classList.remove(`hamburger-icon-open`);
     activeMenuOption.classList.remove(`active-hamburger-menu`);
-    navLanguages.classList.add(`hidden-languages`);
+    navLanguages[0].classList.add(`hidden-languages`);
+    navLanguages[1].classList.add(`hidden-languages`);
   }
 }
 

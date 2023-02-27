@@ -31,6 +31,10 @@ nav {
   position: relative;
 }
 
+nav ul.menu {
+  padding: 0;
+}
+
 nav ul li {
   font-size: 16px;
   list-style: none;
@@ -369,8 +373,5 @@ p.footer-text {
 
 .hidden-languages {
   display: none;
-}
-
-.show-languages {
-  display: flex;
+  padding: 0;
 }
