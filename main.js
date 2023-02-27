@@ -26,6 +26,7 @@ hamburgerMenu.addEventListener(`click`, toggleMenu);
 
 console.log(hamburgerMenu);
 
+//When media query changes, hamburger menu options is hidden again
 function checkScreenSize() {
   if (window.innerWidth > 820) {
     navMenu.classList.remove(`hamburger-menu-open`);
@@ -61,6 +62,8 @@ window.addEventListener("resize", checkScreenSize);
 
 //Const for the select element for the language change
 const languageSelect = document.getElementById("languageSelect");
+const hambLanguageSelect = document.getElementById("hamburgerLanguageSelect");
+
 //const with the content that will be changed
 const content = {
   en: '<h1>Hi! I\'m <span class="myname">Leticia</span></h1><h4>A creative frontend developer and UX/UI designer.</h4>',
@@ -69,8 +72,20 @@ const content = {
 
 //Event that triggers the language change
 languageSelect.addEventListener("change", function () {
-  var selectedLanguage = languageSelect.value;
-  var headerElement = document.getElementById("header-text");
+  const selectedLanguage = languageSelect.value;
+  const headerElement = document.getElementById("header-text");
 
   headerElement.innerHTML = content[selectedLanguage];
+  // set the same value for the other select button
+  hambLanguageSelect.value = selectedLanguage;
+});
+
+//Event that triggers the language change on the hamburger menu
+hambLanguageSelect.addEventListener("change", function () {
+  const selectedLanguage = hambLanguageSelect.value;
+  const headerElement = document.getElementById("header-text");
+
+  headerElement.innerHTML = content[selectedLanguage];
+  // set the same value for the other select button
+  languageSelect.value = selectedLanguage;
 });

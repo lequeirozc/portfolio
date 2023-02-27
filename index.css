@@ -346,8 +346,8 @@ p.footer-text {
   top: 0;
   width: 100vw;
   margin: 0;
-  text-align: center;
   padding: 15px 0;
+  text-align: center;
   overflow: hidden;
   overflow-x: hidden;
   z-index: 1;
