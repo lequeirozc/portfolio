@@ -12,6 +12,7 @@ header {
   background-image: url("Image/gradient-bg-3.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
   overflow-x: hidden;
@@ -260,6 +261,7 @@ section.phrase {
   background-image: url("Image/gradient-bg-3.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 50vh;
   min-height: 200px;
 
