@@ -1,6 +1,6 @@
 * {
   color: #f7f6f5;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-image: url("Image/gradient-bg-3.png");
+  background-image: url('Image/gradient-bg-3.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -167,35 +167,35 @@ p {
 }
 
 .html-icon:hover {
-  content: url("Image/skills/HTML-hover.png");
+  content: url('Image/skills/HTML-hover.png');
 }
 
 .css-icon:hover {
-  content: url("Image/skills/css-hover.png");
+  content: url('Image/skills/css-hover.png');
 }
 
 .js-icon:hover {
-  content: url("Image/skills/JS-hover.png");
+  content: url('Image/skills/JS-hover.png');
 }
 
 .react-icon:hover {
-  content: url("Image/skills/react-hover.png");
+  content: url('Image/skills/react-hover.png');
 }
 
 .figma-icon:hover {
-  content: url("Image/skills/figma-hover.png");
+  content: url('Image/skills/figma-hover.png');
 }
 
 .jquery-icon:hover {
-  content: url("Image/skills/jQuery-hover.png");
+  content: url('Image/skills/jQuery-hover.png');
 }
 
 .adobe-icon:hover {
-  content: url("Image/skills/adobe-cs-hover.png");
+  content: url('Image/skills/adobe-cs-hover.png');
 }
 
 .git-icon:hover {
-  content: url("Image/skills/git-hover.png");
+  content: url('Image/skills/git-hover.png');
 }
 
 button.main-button {
@@ -258,7 +258,7 @@ button.main-button:hover {
 
 section.phrase {
   padding: 0 10%;
-  background-image: url("Image/gradient-bg-3.png");
+  background-image: url('Image/gradient-bg-3.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

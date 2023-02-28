@@ -43,9 +43,15 @@
 
         <ul class="menu">
           <li><a href="#" class="active-menu" id="active-menu">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html" class="contact">Get in touch</a></li>
+          <li><a href="about.html" data-translate="about">About</a></li>
+          <li>
+            <a href="projects.html" data-translate="projects">Projects</a>
+          </li>
+          <li>
+            <a href="contact.html" class="contact" data-translate="contact"
+              >Get in touch</a
+            >
+          </li>
 
           <li class="hidden-languages hamburger-languages">
             <select
@@ -73,8 +79,13 @@
 
       <div class="header-content lax">
         <div id="header-text">
-          <h1>Hi! I'm <span class="myname">Leticia</span></h1>
-          <h4>A creative frontend developer and UX/UI designer.</h4>
+          <h1>
+            <span data-translate="header01">Hi! I'm</span>
+            <span class="myname">Leticia</span>
+          </h1>
+          <h4 data-translate="header02">
+            A creative frontend developer and UX/UI designer.
+          </h4>
         </div>
         <div class="icons">
           <a href="https://www.linkedin.com/in/lequeirozc/" class="icon">
@@ -99,15 +110,16 @@
 
     <section>
       <div class="about" id="about">
-        <h2>About</h2>
-        <p>
+        <h2 data-translate="section01">About</h2>
+        <p data-translate="paragraph01">
           I'm a multi-disciplinary designer and front-end developer specializing
           in user experience and user interface design. With a background in
           graphic design and architecture, I bring a unique perspective to my
           work in technology. My endless curiosity and passion for innovation
           drive me to help businesses connect with their clients through
-          visually appealing and user-friendly designs.<br />
-          <br />
+          visually appealing and user-friendly designs.
+        </p>
+        <p data-translate="paragraph02">
           My goal is to make a positive impact globally by being part of a
           diverse team that leverages technology for a better future. Currently
           studying coding, I'm excited to continue expanding my skills and
@@ -116,7 +128,7 @@
       </div>
 
       <div class="sub-section">
-        <h3>My skills</h3>
+        <h3 data-translate="subsection01">My skills</h3>
         <div class="row-skills">
           <img src="Image/skills/HTML.png" class="skill-icon html-icon" />
           <img src="Image/skills/CSS.png" class="skill-icon css-icon" />
@@ -130,31 +142,33 @@
           <!-- <img src="Image/skills/git.png" class="skill-icon git-icon" /> -->
         </div>
       </div>
-      <button class="main-button">
+      <button class="main-button" data-translate="button01">
         Get to know more about me and my experiences
       </button>
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2 data-translate="section02">Projects</h2>
       <div class="row-projects">
         <div class="project" id="project1"></div>
         <div class="project" id="project2"></div>
         <div class="project" id="project3"></div>
       </div>
-      <button class="main-button">View more</button>
+      <button class="main-button" data-translate="button02">View more</button>
     </section>
 
     <section class="phrase">
       <p class="phrase">
-        Let&apos;s design something
-        <span class="italic">incredible</span> together.
+        <span data-translate="phrasePart01">Let&apos;s design something</span>
+        <span class="italic" data-translate="phrasePart02">incredible</span>
+        <span data-translate="phrasePart03">together.</span>
       </p>
     </section>
 
     <footer>
       <p class="footer-text">
-        &copy; 2023 - All rights reserved<br />
+        &copy; 2023 - <span data-translate="footer">All rights reserved</span
+        ><br />
         Leticia Queiroz Carvalho
       </p>
     </footer>
@@ -168,12 +182,12 @@
         lax.init();
 
         // Add a driver that we use to control our animations
-        lax.addDriver("scrollY", function () {
+        lax.addDriver('scrollY', function () {
           return window.scrollY;
         });
 
         // Add animation bindings to elements
-        lax.addElements(".lax", {
+        lax.addElements('.lax', {
           scrollY: {
             opacity: [
               [0, 300],
