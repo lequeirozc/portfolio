@@ -71,7 +71,7 @@
         </div>
       </nav>
 
-      <div class="header-content">
+      <div class="header-content lax">
         <div id="header-text">
           <h1>Hi! I'm <span class="myname">Leticia</span></h1>
           <h4>A creative frontend developer and UX/UI designer.</h4>
@@ -98,7 +98,7 @@
     </header>
 
     <section>
-      <div class="About">
+      <div class="about" id="about">
         <h2>About</h2>
         <p>
           I'm a multi-disciplinary designer and front-end developer specializing
@@ -161,5 +161,27 @@
 
     <!-- Scripts-->
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <!-- JS -->
+    <script>
+      window.onload = function () {
+        lax.init();
+
+        // Add a driver that we use to control our animations
+        lax.addDriver("scrollY", function () {
+          return window.scrollY;
+        });
+
+        // Add animation bindings to elements
+        lax.addElements(".lax", {
+          scrollY: {
+            opacity: [
+              [0, 300],
+              [1, 0.3],
+            ],
+          },
+        });
+      };
+    </script>
   </body>
 </html>
